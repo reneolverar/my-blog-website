@@ -1,0 +1,75 @@
+.page-layout{
+    display:grid;
+    border: 1px solid black;
+    grid-template-columns: 200px 200px 1200px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+    "hd hd hd"
+    "sb bs main"
+    "ft ft ft";
+}
+.header{
+    grid-area: hd;  /* takes up all the width */
+    margin: 15px;
+    padding: 5px 15px;
+}
+.sidebar{
+    grid-area: sb;
+    margin: 15px;
+    padding: 5px 15px;
+}
+.main{
+    grid-area: main;
+    margin: 15px;
+    padding: 5px 15px;
+}
+.footer{
+    grid-area: ft;  /* takes up all the width */
+    margin: 15px;
+    padding: 5px 15px;
+    border-radius: 2%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+h2{
+    color: rgb(0, 183, 255);
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+.sidebar-links {
+    color: rgb(0, 183, 255);
+  }
+.button{
+    border-radius: 15%;
+    border-width: 3px;
+}
+.blog-area{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-container{
+    width: 300px;
+    border-radius: 5%;
+    background-color: lightgray;
+    text-align: left;
+    padding: 25px;
+    margin: 15px;
+}
+.blog-date{
+    color: rgb(0, 183, 255);
+    margin-top: 1px;
+}
+.follow-button {
+    background-color: rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);;
+    color: white;
+}
+.subscribe-button {
+    background-color: white;
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    border-color: rgb(0, 140, 255);;
+}
+a {
+    text-decoration: none;  /* Remove underlining from links */
+  }

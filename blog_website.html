@@ -4,55 +4,58 @@
 <head>
 	<meta charset="utf-8">
 	<title> Rene´s Blog </title>
-    <link rel="stylesheet" href="FundamentalsCSS.css">
+    <link rel="stylesheet" href="blog_website_style.css">
 </head>
 
-<body>
-    <h1 class = "special">Rene´s Blog</h1>
+<body class="page-layout">
+    <h1 class = "header">Rene´s Blog</h1>
 
-    <div>
-        <a href="DESIGNSYSTEM" target="_blank"> Design system </a>
+    <div class="sidebar">
+        <a href="DESIGNSYSTEM" target="_blank" class="sidebar-links"> Design system </a><br><br>
         <form id="FOLLOW" onsubmit="return addTable()">
-            <input type="submit" name="Follow">
-        </form>
+            <input type="submit" name="Follow" class="button follow-button">
+        </form><br>
         <form id="SUBSCRIBE" onsubmit="return addTable()">
-            <input type="submit" text="Subscribe">
+            <input type="submit" text="Subscribe" class="button subscribe-button">
         </form>
     </div>
 
-    <p>Latest blogs</p>
+    <div class="main">
+        <p>Latest blogs</p>
+        <div class="blog-area">
+            <div class="blog-container">
+                <h2>Blog post 5</h2>
+                <p class="blog-date">June 26</p>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                <a href="BLOG" target="_blank"> Continue reading </a>
+            </div>
+            <div class="blog-container">
+                <h2>Blog post 4</h2>
+                <p class="blog-date">June 25</p>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                <a href="BLOG" target="_blank"> Continue reading </a>
+            </div>
+            <div class="blog-container">
+                <h2>Blog post 3</h2>
+                <p class="blog-date">June 24</p>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                <a href="BLOG" target="_blank"> Continue reading </a>
+            </div>
+            <div class="blog-container">
+                <h2>Blog post 2</h2>
+                <p class="blog-date">June 23</p>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
 
-    <div>
-        <div>
-            <h2>Blog post 5</h2>
-            <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-            <p>June 26</p>
-            <a href="BLOG" target="_blank"> Continue reading </a>
-        </div>
-        <div>
-            <h2>Blog post 4</h2>
-            <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-            <p>June 25</p>
-            <a href="BLOG" target="_blank"> Continue reading </a>
-        </div>
-        <div>
-            <h2>Blog post 3</h2>
-            <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-            <p>June 24</p>
-            <a href="BLOG" target="_blank"> Continue reading </a>
-        </div>
-        <div>
-            <h2>Blog post 2</h2>
-            <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-            <p>June 23</p>
-            <a href="BLOG" target="_blank"> Continue reading </a>
-        </div>
-        <div>
-            <h2>Blog post 1</h2>
-            <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-            <p>June 22</p>
-            <a href="BLOG" target="_blank"> Continue reading </a>
+                <a href="BLOG" target="_blank"> Continue reading </a>
+            </div>
+            <div class="blog-container">
+                <h2>Blog post 1</h2>
+                <p class="blog-date">June 22</p>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                <a href="BLOG" target="_blank"> Continue reading </a>
+            </div>
         </div>
     </div>
-
-    <p>Copyright 2021</p>
+    <div class="footer">
+        <p>Copyright 2021</p>
+    </div>
