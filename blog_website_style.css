@@ -1,6 +1,5 @@
 .page-layout{
     display:grid;
-    border: 1px solid black;
     grid-template-columns: 200px 200px 1200px;
     grid-template-rows: 100px 1fr 100px;
     grid-template-areas:
@@ -28,16 +27,16 @@
     margin: 15px;
     padding: 5px 15px;
     border-radius: 2%;
-    background-color: rgb(58, 58, 58);
-    color: white;
+    background-color: #3a3a3a;
+    color: #ffffff;
 }
 h2{
-    color: rgb(0, 183, 255);
+    color: #00b7ff;
     margin-top: 5px;
     margin-bottom: 1px;
 }
 .sidebar-links {
-    color: rgb(0, 183, 255);
+    color: #00b7ff;
   }
 .button{
     border-radius: 15%;
@@ -50,25 +49,25 @@ h2{
 .blog-container{
     width: 300px;
     border-radius: 5%;
-    background-color: lightgray;
+    background-color: #d3d3d3;
     text-align: left;
     padding: 25px;
     margin: 15px;
 }
 .blog-date{
-    color: rgb(0, 183, 255);
+    color: #00b7ff;
     margin-top: 1px;
 }
 .follow-button {
-    background-color: rgb(0, 140, 255);
-    border-color: rgb(0, 140, 255);;
-    color: white;
+    background-color: #008cff;
+    border-color: #008cff;
+    color: #ffffff;
 }
 .subscribe-button {
-    background-color: white;
-    color: rgb(0, 183, 255);
+    background-color: #ffffff;
+    color: #00b7ff;
     font-weight: bold;
-    border-color: rgb(0, 140, 255);;
+    border-color: #008cff;;
 }
 a {
     text-decoration: none;  /* Remove underlining from links */
