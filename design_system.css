@@ -1,0 +1,92 @@
+h1, h2{
+    color: rgb(0, 183, 255);
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+div, p, span, li{
+    font-size: 16px;
+    line-height: 24px;
+}
+.index{
+    display: flex;
+    flex-wrap: wrap;
+}
+.index div{
+    margin: 15px;
+}
+.color-circle{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    position: relative;
+}
+.color-circle span{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.blue{
+    background-color: #00b7ff;
+}
+.dark-blue{
+    background-color: #008cff;
+}
+.light-gray{
+    background-color: #d3d3d3;
+}
+.dark-gray{
+    background-color: #3a3a3a;
+}
+.author-avatar{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.button{
+    border-radius: 15%;
+    border-width: 3px;
+}
+.newer-post-button {
+    background-color: rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);;
+    color: white;
+    margin: 5px;
+}
+.older-post-button {
+    background-color: white;
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    border-color: rgb(0, 140, 255);;
+    margin: 5px;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100px;
+}
+.follow-button {
+    background-color: rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);;
+    color: white;
+    margin: 5px;
+}
+.subscribe-button {
+    background-color: white;
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    border-color: rgb(0, 140, 255);
+    margin: 5px;
+}
+.about{
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px 5px;
+}
+a {
+    text-decoration: none;  /* Remove underlining from links */
+  }
