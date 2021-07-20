@@ -1,3 +1,6 @@
+@import 'custom.css';
+@import url("chrome://communicator/skin/");
+
 .page-layout{
     display:grid;
     border: 1px solid black;
@@ -37,12 +40,6 @@ h1, h2{
     margin-top: 5px;
     margin-bottom: 1px;
 }
-h6{
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
-    margin: 5px;
-}
 .main h2{
     margin-bottom: 1px;
 }
@@ -75,6 +72,12 @@ h6{
 .author-description{
     grid-area: desc;
     padding-top: 10px;
+}
+.sidebar-header{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px;
 }
 .sidebar-links {
     color: rgb(0, 183, 255);
