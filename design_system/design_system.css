@@ -82,11 +82,3 @@ div, p, span, li{
     border-color: rgb(0, 140, 255);
     margin: 5px;
 }
-.about{
-    width: 100%;
-    background-color: lightgray;
-    padding: 10px 5px;
-}
-a {
-    text-decoration: none;  /* Remove underlining from links */
-  }
