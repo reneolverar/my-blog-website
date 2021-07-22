@@ -61,7 +61,7 @@ h1, h2{
     display: grid;
     position: relative;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 30px 125px;
     grid-template-areas:
     "img aut"
     "img desc";
