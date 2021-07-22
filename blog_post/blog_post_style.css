@@ -1,16 +1,28 @@
-@import 'custom.css';
-@import url("chrome://communicator/skin/");
-
-.page-layout{
-    display:grid;
-    border: 1px solid black;
-    grid-template-columns: 1200px 300px;
-    grid-template-rows: 100px 1fr 150px;
-    grid-template-areas:
-    "hd hd"
-    "main sb"
-    "ft ft";
+@media (max-width: 600px){
+    .page-layout{  /* Small screens */
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 600px 150px;
+        grid-template-areas:
+        "hd hd"
+        "main main"
+        "sb sb"
+        "ft ft";
+    }
 }
+
+@media (min-width: 601px){
+    .page-layout { /* Medium-Large Screens */
+        display:grid;
+        grid-template-columns: 1fr 200px 200px;
+        grid-template-rows: 100px 1fr 150px;
+        grid-template-areas:
+        "hd sb sb"
+        "main sb sb"
+        "ft ft ft";
+    }
+}
+
 .header{
     grid-area: hd;  /* takes up all the width */
     margin: 15px;
@@ -31,7 +43,6 @@
     grid-area: ft;  /* takes up all the width */
     margin: 15px;
     padding: 5px 15px;
-    border-radius: 2%;
     background-color: rgb(58, 58, 58);
     color: white;
 }
@@ -49,17 +60,24 @@ h1, h2{
 .author-container{
     display: grid;
     position: relative;
-    grid-template-columns: 200px 800px;
-    grid-template-rows: 25px 125px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 30px 1fr;
     grid-template-areas:
     "img aut"
     "img desc";
     margin-bottom: 25px;
+     /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.5s;
 }
+.author-container:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+  }
 .author-container img{
     position: absolute;
-    top: 0px;
-    bottom: 0px;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
     margin: auto;
     grid-area: img;
     border-radius: 50%;

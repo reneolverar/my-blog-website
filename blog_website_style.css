@@ -1,12 +1,29 @@
-.page-layout{
-    display:grid;
-    grid-template-columns: 200px 200px 1200px;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-areas:
-    "hd hd hd"
-    "sb bs main"
-    "ft ft ft";
+/* Responsive design */
+@media (max-width: 600px){
+    .page-layout{  /* Small screens */
+        display:grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 100px 100px 1fr 100px;
+        grid-template-areas:
+        "hd hd"
+        "sb sb"
+        "main main"
+        "ft ft";
+    }
 }
+
+@media (min-width: 601px){
+    .page-layout { /* Medium-Large Screens */
+        display:grid;
+        grid-template-columns: 100px 100px 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+        "hd hd hd"
+        "sb sb main"
+        "ft ft ft";
+    }
+}
+
 .header{
     grid-area: hd;  /* takes up all the width */
     margin: 15px;
