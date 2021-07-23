@@ -19,9 +19,12 @@ Colors
 }
 
 .blue{
+    color: white;
     background-color: var(--blue-color);
+
 }
 .dark-blue{
+    color: white;
     background-color: var(--dark-blue-color);
 }
 .light-gray{
@@ -29,6 +32,7 @@ Colors
     background-color: var(--light-gray-color);
 }
 .dark-gray{
+    color: white;
     background-color: var(--dark-gray-color);
 }
 
