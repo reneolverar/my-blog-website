@@ -1,0 +1,200 @@
+/*===============================================
+Page layout
+===============================================*/
+
+@media (max-width: 600px){  /* Small screens */
+    .homepage-layout{
+        display:grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 100px 100px 1fr 100px;
+        grid-template-areas:
+        "hd hd"
+        "sb sb"
+        "main main"
+        "ft ft";
+    }
+
+    .blog-post-layout{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 600px 100px;
+        grid-template-areas:
+        "hd hd"
+        "main main"
+        "sb sb"
+        "ft ft";
+    }
+}
+
+@media (min-width: 601px){ /* Medium-Large Screens */
+    .homepage-layout {
+        display:grid;
+        grid-template-columns: 100px 100px 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+        "hd hd hd"
+        "sb sb main"
+        "ft ft ft";
+    }
+
+    .blog-post-layout {
+        display:grid;
+        grid-template-columns: 1fr 200px 200px;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+        "hd sb sb"
+        "main sb sb"
+        "ft ft ft";
+    }
+}
+
+/*===============================================
+Header
+===============================================*/
+
+.homepage-header,
+.blog-post-header{
+    grid-area: hd;  /* takes up all the width */
+    margin: 15px;
+    padding: 5px 15px;
+}
+
+.blog-post-header{
+    text-align: center;
+}
+
+/*===============================================
+Main section
+===============================================*/
+
+.homepage-main,
+.blog-post-main
+{
+    grid-area: main;
+    margin: 15px;
+    padding: 5px 15px;
+}
+
+/* Blog website layout */
+
+.homepage-main h2{
+    margin-bottom: 1px;
+}
+
+.homepage-main p{
+    margin-top: 1px;
+}
+
+.blog-area{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-container{
+    width: 300px;
+    border-radius: 5%;
+    background-color: var(--light-gray-color);
+    text-align: left;
+    padding: 25px;
+    margin: 15px;
+}
+
+.blog-date{
+    color: var(--blue-color);
+    margin-top: 1px;
+}
+
+.blog-container a {
+    text-decoration: none;  /* Remove underlining from links */
+}
+
+/* Blog post layout */
+.blog-post-main h2{
+    margin: 0px;
+}
+
+/* Author-container */
+
+.author-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 30px 125px;
+    grid-template-areas:
+    "img aut"
+    "img desc";
+    margin-bottom: 25px;
+     /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.5s;
+}
+
+.author-container:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+
+.author-avatar{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.author-container .author-avatar{
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    margin: auto;
+    grid-area: img;
+}
+
+.author-name{
+    grid-area: aut;
+    color: var(--blue-color);
+    padding-top: 5px;
+    font-size: 1.5em;
+}
+
+.author-description{
+    grid-area: desc;
+    padding-top: 10px;
+    font-size: 1.25em;
+}
+
+/*===============================================
+Sidebar
+===============================================*/
+
+.homepage-sidebar,
+.blog-post-sidebar{
+    grid-area: sb;
+    margin: 15px;
+    padding: 5px 15px;
+}
+
+.homepage-sidebar-links,
+.blog-post-sidebar-links {
+    color: var(--blue-color);
+    text-decoration: none;  /* Remove underlining from links */
+}
+
+.blog-post-sidebar h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px;
+}
+
+/*===============================================
+Footer
+===============================================*/
+
+.homepage-footer,
+.blog-post-footer{
+    grid-area: ft;  /* takes up all the width */
+    margin: 15px;
+    padding: 5px 15px;
+    border-radius: 2%;
+    background-color: var(--dark-gray-color);
+    color: var(--light-gray-color);
+}
