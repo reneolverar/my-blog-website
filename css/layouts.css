@@ -28,13 +28,10 @@ Page layouts
     .author-container{  /* Frame for author image and description */
         margin-bottom: 25px;
          /* Add shadows to create the "card" effect */
+        padding: 10px 5px;
         box-shadow: 0 4px 8px 0 #00000033;
         transition: 0.5s;
         text-align: center;
-    }
-
-    .author-container .author-avatar{
-        margin: 5px;
     }
 }
 
@@ -60,26 +57,22 @@ Page layouts
     }
 
     .author-container{
-        display: grid;
-        position: relative;
-        grid-template-columns: 200px 1fr;
-        grid-auto-rows: minmax(75px, max-content);
-        grid-template-areas:
-        "img aut"
-        "img desc";
         margin-bottom: 25px;
+        padding: 10px 5px;
+        display: flex;
+        flex-wrap: wrap;
          /* Add shadows to create the "card" effect */
         box-shadow: 0 4px 8px 0 #00000033;
         transition: 0.5s;
     }
 
-    .author-container .author-avatar{
-        position: absolute;
-        top: 3px;
-        bottom: 3px;
-        left: 3px;
-        margin: auto;
-        grid-area: img;
+    .author-image{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .author-text{
+        display: inline-block;
     }
 }
 
@@ -139,6 +132,21 @@ Main section
     margin-top: 1px;
 }
 
+.blog-head{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-img{
+    margin-left: 50px;
+}
+
+.circular-img{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
 .blog-container a {
     text-decoration: none;  /* Remove underlining from links */
 }
@@ -161,16 +169,14 @@ Main section
 }
 
 .author-name{
-    grid-area: aut;
     color: var(--blue-color);
     font-size: 1.5em;
-    margin: 5px;
+    margin-bottom: 0px;
 }
 
 .author-description{
-    grid-area: desc;
     font-size: 1.25em;
-    margin: 5px;
+    margin: 0px;
 }
 
 /*===============================================

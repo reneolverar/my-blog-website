@@ -66,6 +66,17 @@ Containers
     border: 1px solid var(--light-gray-color);
 }
 
+/*===============================================
+Miscelaneous
+===============================================*/
+
+/* Section separator (horizontal line)*/
+
+.separator{
+    width: 100%;
+    border: 1px solid var(--light-gray-color);
+}
+
 /* Color pallet */
 
 .color-circle{
@@ -82,15 +93,4 @@ Containers
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-/*===============================================
-Miscelaneous
-===============================================*/
-
-/* Section separator (horizontal line)*/
-
-.separator{
-    width: 100%;
-    border: 1px solid var(--light-gray-color);
 }
