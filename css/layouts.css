@@ -6,7 +6,7 @@ Page layouts
     .homepage-layout{
         display:grid;
         grid-template-columns: 100px 1fr;
-        grid-template-rows: 100px 100px 1fr 100px;
+        grid-template-rows: 100px 175px 1fr 100px;
         grid-template-areas:
         "hd hd"
         "sb sb"
