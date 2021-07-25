@@ -17,7 +17,7 @@ Page layouts
     .blog-post-layout{
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr 600px 100px;
+        grid-template-rows: 100px 1fr 650px 100px;
         grid-template-areas:
         "hd hd"
         "main main"
@@ -210,8 +210,8 @@ Footer
 .homepage-footer,
 .blog-post-footer{
     grid-area: ft;  /* takes up all the width */
-    margin: 15px;
-    padding: 5px 15px;
+    margin: 10px;
+    padding: 10px 10px;
     border-radius: 2%;
     background-color: var(--dark-gray-color);
     color: var(--light-gray-color);
